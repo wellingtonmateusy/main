@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form>
+        <table>
+            <caption><h2>Formulário de cadastro</h2></caption>
+            <tbody>
+                <tr>
+                    <td><label for="text">Nome:</label></td>
+                    <td><input type="text" id="nome" placeholder="Seu nome"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail:</label></td>
+                    <td><input type="email" placeholder="Seu e-mail"/></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Jogo:</label><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="jogos" id="jogo_cod" checked/>
+                        <label for="jogos">Cod</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="jogos" id="jogo_cs-go"/>
+                        <label for="jogos">Cs-Go</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="jogos" id="jogo_minecraft"/><label for="jogos">Minecraft</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="jogos" id="jogo_valorant"/><label for="jogos">Valorant</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="jogos" id="jogo_lol"/><label for="jogos">League of Legends</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="enviar" type="submit">Enviar</button>
+                        <button id="reset" type="reset">Limpar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+    <hr/>
+    <footer><p>2023© - Todos os direitos reservados.</p></footer>
+</html>
