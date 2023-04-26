@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header{
+    padding: 16px 0;
+    background-color: #112f2e;
+    color: #d28410;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li{
+    display: inline;
+    margin-left: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+header li a{
+    color: #d28410;
+    text-decoration: none;
+}
+
+.container{
+    width: 1366px;
+    margin: 0 auto 0 auto;
+}
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img{
+    height: 260px;
+    width: 410px;
+}
+
+.articles article{
+    width: 30%;
+}
+
+section{
+    padding: 16px 0;
+}
+
+section h2, 
+.articles article{
+    margin-bottom: 16px;
+}
+
+.articles article h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a{
+    background-color: green;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 8px;
+    display: inline-block;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.articles article a:hover{
+    text-decoration: underline;
+}
+
+#sports{
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#economy{
+    background-color: #f8f59f;
+}
+
+#economy .articles article a{
+    background-color: #ff9f1a;
+}
+
+#games{
+    background-color: rgb(2, 153, 153);
+}
+
+#games .articles article a{
+    background-color: rgb(1, 212, 212);
+}
+
+#politica{
+    background-color: brown;
+}
+
+#politica .articles article a{
+    background-color: red;
+}
