@@ -12,3 +12,15 @@ VM472:2 5 x 7 = 35
 VM472:2 5 x 8 = 40
 VM472:2 5 x 9 = 45
 VM472:2 5 x 10 = 50
+
+
+function tabuada(numTab, tamTab) {
+    
+    for (let cont = 1; cont <= tamTab; cont++){
+        console.log(`${cont} x  ${numTab}  =  ${cont * numTab}`);
+    }
+}
+let numTab = prompt("Informe o nº da tabuada:");
+let tamTab = prompt("Informe o tamanho da tabuada:");
+
+tabuada(numTab, tamTab);
