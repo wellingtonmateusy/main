@@ -11,7 +11,7 @@ form.addEventListener('submit', function(e){
     const mensagemSucesso = `Sucesso. O Segundo - ${campoB.value} número é maior que o Primeiro - ${campoA.value}.`
     const mensagemNegativa = `Falhou. Porque o Primeiro número ${campoA.value} é maior que o Segundo número ${campoB.value}.`
 
-    formValido = (campoB.value > campoA.value);
+    formValido = (parseInt(campoB.value) > parseInt(campoA.value));
 
     if(formValido){
         alert(mensagemSucesso);
@@ -19,6 +19,8 @@ form.addEventListener('submit', function(e){
         campoB.value = '';
     }else{
         alert(mensagemNegativa);
+        campoA.value = '';
+        campoB.value = '';
     }
 })
 
