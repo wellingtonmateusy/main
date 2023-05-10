@@ -1,0 +1,321 @@
+1- Faça um Programa que peça dois números e imprima o maior deles.
+
+let num1, num2;
+
+num1 = prompt("Digite o primeiro número:")
+num2 = prompt("Digite o segundo número:")
+
+if(num1 > num2){
+    alert(`O número maior é o ${num1} `);
+}
+
+else if(num2 > num1){
+    alert(`O número maior é o ${num2} `);
+}
+
+else{
+    alert("Os números são iguais");
+}
+
+2- Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
+
+let num;
+
+num = prompt("Digite um número para saber se ele é positivo ou negativo:")
+
+if(num > 0){
+    alert(`O número é positivo: ${num}`);
+}
+
+else if(num < 0){
+    alert(`O número é negativo: ${num}`);
+}
+else if(num == 0){
+    alert(`O número é neutro: ${num}`);
+}
+else{
+  alert("Você não digitou um número");
+}
+
+3- Faça um Programa que verifique se uma letra digitada é "F" ou "M". Conforme a letra escrever: F -Feminino, M -Masculino, Sexo Inválido.
+
+let sexo;
+
+sexo = prompt("Digite uma letra pra saber o  sexo");
+
+if(sexo == "f" || sexo == "F"){
+    console.log("Sexo Feminino");
+}else if(sexo == "m" || sexo == "M"){
+    console.log("Sexo Masculino");
+}else{
+    console.log("Sexo Inválido");
+}
+
+4- Faça um Programa que verifique se uma letra digitada é vogal ou consoante.
+
+let letra;
+
+letra = prompt("Digite uma letra pra saber se é vogal ou consoante");
+
+escolha = isNaN(letra)
+
+if(letra == "a" || letra == "A" || letra == "e" || letra == "E" || letra == "i" || letra == "I" || letra == "o" || letra == "O" || letra == "u" || letra == "U"){
+    console.log(`A letra digitada é uma Vogal: ${letra}`);
+}else if(!escolha){
+    console.log("Digite apenas letra");
+}else{
+    console.log(`A letra digitada é uma Consoante: ${letra}`);
+}
+
+5 - Faça um programa para a leitura de cinco notas parciais de um aluno. O programa deve calcular a média alcançada por aluno e apresentar:
+
+•A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
+
+•A mensagem "Reprovado", se a média for menor do que sete;
+
+•A mensagem "Aprovado com Distinção", se a média for igual a dez.
+
+let nota1 = parseFloat(prompt("Digite a 1ª nota"))
+let nota2 = parseFloat(prompt("Digite a 2ª nota"))
+let nota3 = parseFloat(prompt("Digite a 3ª nota"))
+let nota4 = parseFloat(prompt("Digite a 4ª nota"))
+let nota5 = parseFloat(prompt("Digite a 5ª nota"))
+
+let media = (nota1 + nota2 + nota3 + nota4 + nota5) / 5
+
+if(parseFloat(nota1, nota2, nota3, nota4, nota5 >= 10)){
+    if(media >= 7){
+        console.log("Aprovado")
+    }else if(media < 7){
+        console.log("Reprovado")
+    }else if(media == 10){
+        console.log("Aprovado com Distinção")
+    }else{
+        console.log("Digite números")
+    }
+}else{
+    console.log("Digite um número entre 1 até 10")
+}
+
+6- Faça um Programa que leia três números e mostre o maior deles.
+
+let num1, num2, num3;
+
+num1 = prompt("Digite o primeiro número:");
+num2 = prompt("Digite o segundo número:");
+num3 = prompt("Digite o terceiro número:");
+
+escolha = isNaN(num1, num2, num3)
+
+if(!escolha){
+    if(num1 > num2 && num1 > num3){
+        console.log("O nº 1 é o maior: " + num1 +".")
+    }else if(num2 > num1 && num2 > num3){
+        console.log("O nº 2 é o maior: " + num2 +".")
+    }else if(num3 > num1 && num3 > num2){
+        console.log("O nº 3 é o maior: " + num3 +".")
+    }else{
+        console.log("Os números são iguais: Nº1" +" " + num1 +", " +"Nº2" +" " + num2 +", " +"Nº3" +" " + num3 +".")
+    }
+}else{
+    alert("Informe apenas números!")
+}
+
+7- Faça um Programa que leia três números e mostre o maior e o menor deles.
+
+let num1, num2, num3;
+
+num1 = prompt("Digite o primeiro número:");
+num2 = prompt("Digite o segundo número:");
+num3 = prompt("Digite o terceiro número:");
+
+escolha = isNaN(num1, num2, num3)
+
+if(!escolha){
+    if(num1 < num2 && num1 < num3){
+        console.log("O nº 1 é o menor: " + num1 +".")
+    }else if(num2 < num1 && num2 < num3){
+        console.log("O nº 2 é o menor: " + num2 +".")
+    }else if(num3 < num1 && num3 < num2){
+        console.log("O nº 3 é o menor: " + num3 +".")
+    }else{
+        console.log("Os números são iguais: Nº1" +" " + num1 +", " +"Nº2" +" " + num2 +", " +"Nº3" +" " + num3 +".")
+    }
+}else{
+    alert("Informe apenas números!")
+}
+
+8- Faça um programa que pergunte o preço de três produtos e informe qual produto você deve comprar, sabendo que a decisão é sempre pelo mais barato.
+
+let produto1, produto2, produto3;
+
+produto1 = prompt("Digite o 1° preço R$:");
+produto2 = prompt("Digite o 2° preço R$:");
+produto3 = prompt("Digite o 3° preço: R$");
+
+escolha = isNaN(produto1, produto2, produto3)
+
+if(!escolha){
+    if(produto1 < produto2 && produto1 < produto3){
+        console.log("O nº 1 produto tem o menor preço: " + produto1 +"R$.")
+    }else if(produto2 < produto1 && produto2 < produto3){
+        console.log("O nº 2 produto tem o menor preço: " + produto2 +"R$.")
+    }else if(produto3 < produto1 && produto3 < produto2){
+        console.log("O nº 3 produto tem o menor preço: " + produto3 +"R$.")
+    }else{
+        console.log("Os preços são iguais: Nº1 Produto" +" " + produto1 +"R$, " +"Nº2 Produto" +" " + produto2 +"R$, " +"Nº3 Produto" +" " + produto3 +"R$.")
+    }
+}else{
+    alert("Informe apenas números!")
+}
+
+9- Faça um Programa que leia três números e mostre-os em ordem decrescente.
+
+let num1, num2, num3;
+
+num1 = prompt("Digite o primeiro número:");
+num2 = prompt("Digite o segundo número:");
+num3 = prompt("Digite o terceiro número:");
+
+escolha = isNaN(num1, num2, num3)
+
+if(!escolha){
+    if(num1 < num2 && num1 < num3 && num2 < num3){
+        console.log(`Em ordem decrescente: Nº3 - ${num3}, Nº2 - ${num2}, Nº1 -  ${num1}.`)
+    }else if(num1 < num2 && num1 < num3 && num3 < num2){
+        console.log(`Em ordem decrescente: Nº2 - ${num2}, Nº3 - ${num3}, Nº1 -  ${num1}.`)
+    }else if(num2 < num1 && num2 < num3 && num3 < num1){
+        console.log(`Em ordem decrescente: Nº1 - ${num1}, Nº3 - ${num3}, Nº2 -  ${num2}.`)
+    }else if(num2 < num1 && num2 < num3 && num1 < num3){
+        console.log(`Em ordem decrescente: Nº3 - ${num3}, Nº1 - ${num1}, Nº2 -  ${num2}.`)
+    }else if(num3 < num1 && num3 < num2 && num1 < num2){
+        console.log(`Em ordem decrescente: Nº2 - ${num2}, Nº1 - ${num1}, Nº3 -  ${num3}.`)
+    }else if(num3 < num1 && num3 < num2 && num2 < num1){
+        console.log(`Em ordem decrescente: Nº1 - ${num1}, Nº2 - ${num2}, Nº3 -  ${num3}.`)
+    }else{
+        console.log("Os números são iguais: Nº1" +" " + num1 +", " +"Nº2" +" " + num2 +", " +"Nº3" +" " + num3 +".")
+    }
+}else{
+    alert("Informe apenas números!")
+}
+
+10- Faça um Programa que pergunte em que turno você estuda. Peça para digitar M-matutino ou V-Vespertino ou N-Noturno. Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso.
+
+let turno;
+
+turno = prompt("Você estuda em qual turno? Digite M para Matutino ou V para Vespertino ou N para Noturno");
+
+if(turno == "m" || turno == "M"){
+    console.log("Bom Dia!");
+}else if(turno == "v" || turno == "V"){
+    console.log("Boa Tarde!");
+}
+else if(turno == "n" || turno == "N"){
+    console.log("Boa Noite!");
+}else{
+    console.log("Valor Inválido!");
+}
+
+11- As  Organizações  Tabajara  resolveram  dar  um  aumento  de  salário  aos  seus  colaboradores  e  lhe  contraram  para desenvolver o programa que calculará os reajustes.•Faça  um  programa  que  recebe  o  salário  de  um  colaborador  e  o  reajuste  segundo  o  seguinte  critério, baseado no salário atual:
+
+•salários até R$ 280,00 (incluindo) : aumento de 20%
+•salários entre R$ 280,00 e R$ 700,00 : aumento de 15%
+•salários entre R$ 700,00 e R$ 1500,00 : aumento de 10%
+•salários de R$ 1500,00 em diante : aumento de 5% 
+Após o aumento ser realizado, informe na tela:
+•o salário antes do reajuste;
+•o percentual de aumento aplicado;
+•o valor do aumento;
+•o novo salário, após o aumento.
+
+var salario = 0, porcentagem, aumento = 0, novo_salario = 0;
+
+salario = parseFloat(prompt("Digite o salário pra saber o aumento:"));
+
+escolha = isNaN(salario)
+
+if(!escolha){
+    if(salario <= 280){
+        porcentagem = 20
+        aumento = 0.20 * salario
+        novo_salario = aumento + salario
+        console.log(`O salário antes do reajuste: R$ ${salario}`);
+        console.log(`O percentual de aumento aplicado: ${porcentagem}%`);
+        console.log(`O valor do aumento: R$ ${aumento}`);
+        console.log(`O novo salário, após o aumento: R$ ${novo_salario}`);
+    }
+    else if(salario > 280 && salario <= 700){
+        porcentagem = 15
+        aumento = 0.15 * salario
+        novo_salario = aumento + salario
+        console.log(`O salário antes do reajuste: R$ ${salario}`);
+        console.log(`O percentual de aumento aplicado: ${porcentagem}%`);
+        console.log(`O valor do aumento: R$ ${aumento}`);
+        console.log(`O novo salário, após o aumento: R$ ${novo_salario}`);
+    }
+    else if(salario > 700 && salario >= 1500){
+        porcentagem = 10
+        aumento = 0.10 * salario
+        novo_salario = aumento + salario
+        console.log(`O salário antes do reajuste: R$ ${salario}`);
+        console.log(`O percentual de aumento aplicado: ${porcentagem}%`);
+        console.log(`O valor do aumento: R$ ${aumento}`);
+        console.log(`O novo salário, após o aumento: R$ ${novo_salario}`);
+    }
+    else if(salario < 1500.00){
+        porcentagem = 5
+        aumento = 0.05 * salario
+        novo_salario = aumento + salario
+        console.log(`O salário antes do reajuste: R$ ${salario}`);
+        console.log(`O percentual de aumento aplicado: ${porcentagem}%`);
+        console.log(`O valor do aumento: R$ ${aumento}`);
+        console.log(`O novo salário, após o aumento: R$ ${novo_salario}`);
+    }
+}else{
+    console.log("Digite apenas números");
+}
+
+12- Faça um programa para o cálculo de uma folha de pagamento, sabendo que os descontos são do Imposto de Renda, que depende do salário bruto (conforme tabela abaixo) e 3% para o Sindicato e que o FGTS corresponde a 11% do Salário Bruto, mas não é descontado (é a empresa que deposita). O Salário Líquido corresponde ao Salário Bruto menos os descontos. O programa deverá pedir ao usuário o valor da sua hora e a quantidade de horas trabalhadas no mês.
+
+•Desconto do IR:
+•Salário Bruto até 900 (inclusive) -isento
+•Salário Bruto até 1500 (inclusive) -desconto de 5%
+•Salário Bruto até 2500 (inclusive) -desconto de 10%
+•Salário Bruto acima de 2500 -desconto de 20% 
+Imprima na tela as informações, dispostas conforme o exemplo abaixo.
+No exemplo o valor da hora é 5 e a quantidade de hora é 220.
+
+13- Faça um Programa que leia um número e exiba o dia correspondente da semana. (1-Domingo, 2-Segunda, etc.), se digitar outro valor deve aparecer valor inválido.
+
+let dia;
+
+dia = prompt("Digite um número de 1 á 7 para saber o dia correspondente:");
+
+escolha = isNaN(dia)
+
+if(!escolha){
+    if(dia == 1){
+        console.log("Domingo");
+    }else if(dia == 2){
+        console,log("Segunda-Feira");
+    }else if(dia == 3){
+        console.log("Terça-Feira");
+    }else if(dia == 4){
+        console.log("Quarta-Feira");
+    }else if(dia == 5){
+        console.log("Quinta-Feira");
+    }else if(dia == 6){
+        console.log("Sexta-Feira");
+    }else if(dia == 7){
+        console.log("Sábado");
+    }else{
+        console.log("Valor Inválido");
+    }
+}else{
+    console.log("Digite apenas números");
+}
+
+14- 
+
+
+
