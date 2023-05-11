@@ -9,7 +9,7 @@ form.addEventListener('submit', function(e){
     e.preventDefault();
 
     const campoA = document.getElementById('campo_a');
-    const mensagemSucesso = `Sucesso. O Segundo número <b>${campoB.value}</b> é maior que o Primeiro - <b>${campoA.value}</b>.`
+    const mensagemSucesso = `Sucesso. O Segundo número <b>${campoB.value}</b> é maior que o Primeiro <b>${campoA.value}</b>.`
     const mensagemNegativa = `Falhou. Porque o Primeiro número <b>${campoA.value}</b> é maior que o Segundo número <b>${campoB.value}</b>.`
     const mensagemIgual = `Os números são Iguais Primeiro número <b>${campoA.value}</b> Segundo número <b>${campoB.value}</b>.`
 
