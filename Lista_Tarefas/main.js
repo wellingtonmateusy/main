@@ -11,7 +11,8 @@ $(document).ready(function(){
         $('#nome_tarefa').val('');
 
         $('li').click(function(){
-            $(this).css("text-decoration", "line-through");
+            $(this).css('text-decoration', 'line-through');
+            $(this).html(novaTarefa + ok);
         })
     });
 });
