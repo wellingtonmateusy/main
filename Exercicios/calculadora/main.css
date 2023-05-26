@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input{
+    display: block;
+    width: 41%;
+    height: 20px;
+    background-color: #fff;
+}
+
+#calculadora{
+    display: inline;
+}
+
+#calculadora button{
+    background-color: black;
+    color: #fff;
+    border: none;
+    width: 10%;
+    
+}
