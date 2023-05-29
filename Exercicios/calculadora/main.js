@@ -10,9 +10,13 @@ $(document).ready(function() {
         var val = $(this).text();
         result.val(result.val() + ' ' + val + ' ');
     });
-    
-    $('.apagaultnum').click(function(){
-        result.val(result.val().slice(0, -1));
+
+    $('.parentece1').click(function(){
+        result.val('(' + result.val());
+    });
+
+    $('.parentece2').click(function(){
+        result.val(result.val() + ')');
     });
 
     $('.clear').click(function() {
@@ -23,8 +27,8 @@ $(document).ready(function() {
         result.val(result.val().slice(0, -1));
     });
 
-    $('.divididopor100').click(function(){
-        result.val(result.val() / 100);
+    $('.raizquadrada').click(function(){
+        result.val(Math.sqrt(result.val()));
     })
 
     $('.1dividido').click(function(){
