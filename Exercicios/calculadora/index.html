@@ -7,43 +7,37 @@
         <link rel="stylesheet" href="./main.css">
         <title>Calculadora</title>
     </head>
-    <header>Calculadora</header>
     <body>
-        <div>
-            <input type="number" name="display" value=''/>
-        </div>
-        <div id="calculadora">
-            <div id="teclas">
-                <button type="reset" id="tecla_limpar_ultimo">CE</button>
-                <button type="reset" id="tecla_limpar">C</button>
-                <button type="button" id="tecla_limpar_um">back</button>
-                <button type="button" id="tecla_dividir">%</button>
-            </div>
-            <div id="teclas">
-                <button type="button" id="tecla7">7</button>
-                <button type="button" id="tecla8">8</button>
-                <button type="button" id="tecla9">9</button>
-                <button type="button" id="tecla_multiplicar">x</button>
-                
-            </div>
-            <div id="teclas">
-                <button type="button" id="tecla4">4</button>
-                <button type="button" id="tecla5">5</button>
-                <button type="button" id="tecla6">6</button>
-                <button type="button" id="tecla_menos">-</button>
-            </div>
-            <div id="teclas">
-                <button type="button" id="tecla1">1</button>
-                <button type="button" id="tecla2">2</button>
-                <button type="button" id="tecla3">3</button>
-                <button type="button" id="tecla_soma">+</button>
-            </div>
-            <div id="teclas">
-                <button type="button">-+</button>
-                <button type="button" id="tecla0">0</button>
-                <button type="button" id="tecla_ponto">,</button>
-                <button type="button" id="tecla_igual">=</button>
+        <div class="calculator">
+            <input type="text" id="result" readonly>
+            <div class="buttons">
+                <button class="divididopor100">%</button>
+                <button class="apagaultnum">CE</button>
+                <button class="clear">C</button>
+                <button class="apagar">⌫</button>
+                <button class="1dividido">¹/ &#879</button>
+                <button class="xelemesmo">&#879 ²</button>
+                <button class="">&#8730; &#879</button>
+                <button class="operator">/</button>
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="operator">*</button>
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="operator">-</button>
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="operator">+</button>
+                <button class="menos">&#177;</button>
+                <button class="number">0</button>
+                <button class="pontuacao">,</button>
+                <button class="calculate">=</button>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./main.js"></script>
     </body>
 </html>
