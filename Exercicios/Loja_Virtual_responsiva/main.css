@@ -110,23 +110,16 @@ header .container a{
 
 @media screen and (min-width: 641px) and (max-width: 1023px){
 
-    html{
-        background-color: green;
-    }
     .container{
         max-width: 90%;
     }
 
-    .produtos a{
-        font-size: 1.5em;
-    }
-
     .produtos{
-        grid-template-columns: repeat(2, 50%);
+        grid-template-columns: repeat(2, 49%);
     }
 
     .produto img{
-        max-width: 100%;
+        max-width: 320px;
     }
 
     .sobre_loja{
@@ -136,10 +129,6 @@ header .container a{
 
 @media screen and (max-width: 640px){
 
-    html{
-        background-color: aquamarine;
-    }
-
     .conteudo{
         display: block;
     }
@@ -148,27 +137,15 @@ header .container a{
         max-width: 90%;
     }
 
-    .produtos a{
-        font-size: 1.5em;
-    }
-
     .produtos{
-        grid-template-columns: repeat(1, 100%);
+        display: inline;
     }
 
     .produto img{
-        max-width: 60%;
+        max-width: 320px;
     }
 
     .sobre_loja{
         display: inline;
-    }
-
-    aside{
-        padding-left: 0;
-    }
-
-    header div.container{
-        flex-direction: column;
     }
 }
