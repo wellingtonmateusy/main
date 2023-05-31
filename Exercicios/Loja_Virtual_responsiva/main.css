@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bungee', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    background-color: #ff0101;
+    padding: 15px 0 0;
+    margin-bottom: 60px;
+}
+
+header .container h1{
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+header .container ul{
+    list-style: none;
+}
+
+header .container li{
+    display: inline;
+    margin-left: 20px;
+}
+
+header .container a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.sobre_loja{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+#linha span{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 4px;
+    width: 102%;
+    background-color: #ff0101;
+    display: block;
+}
+
+.produto img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 100%;
+}
+
+.produto article{
+    display: flex;
+    font-size: 2em;
+}
+
+.produto img{
+    width: 100%;
+    height: 240px;
+}
+
+.produto p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+._produtos h2{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 2%;
+    row-gap: 5%;
+}
+
+.produto button{
+    background-color: #ff0101;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.produto button:hover{
+    cursor: pointer;
+    background-color: #ff0131;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+
+    html{
+        background-color: green;
+    }
+    .container{
+        max-width: 90%;
+    }
+
+    .produtos a{
+        font-size: 1.5em;
+    }
+
+    .produtos{
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .produto img{
+        max-width: 100%;
+    }
+
+    .sobre_loja{
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 640px){
+
+    html{
+        background-color: aquamarine;
+    }
+
+    .conteudo{
+        display: block;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .produtos a{
+        font-size: 1.5em;
+    }
+
+    .produtos{
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .produto img{
+        max-width: 60%;
+    }
+
+    .sobre_loja{
+        display: inline;
+    }
+
+    aside{
+        padding-left: 0;
+    }
+
+    header div.container{
+        flex-direction: column;
+    }
+}
