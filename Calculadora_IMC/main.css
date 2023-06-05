@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-.calculatora{
+.calculatora,
+.calculatora2{
     width: 20%;
     margin: 100px auto;
     padding: 10px;
@@ -13,7 +14,8 @@
     border-radius: 16px;
 }
 
-.calculatora h2{
+.calculatora h2,
+.calculatora2 h2{
     text-align: center;
 }
 
@@ -28,9 +30,19 @@
     border-radius: 5px;
 }
 
-.buttons {
+.buttons,.buttons2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3px;
+}
+
+.buttons2{
+    display: none;
+}
+
+.mensagem1,.mensagem2,.mensagem3,.mensagem4,
+.mensagem5,.mensagem6,.mensagem7{
+    margin-top: 10px;
+    display: none;
 }
 
