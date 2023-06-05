@@ -9,47 +9,60 @@
         <title>Calculadora de IMC</title>
     </head>
     <body>
-        <div class="calculatora">
+        <div class="container calculadora">
             <h2>Calculadora IMC</h2>
             <h2 class="h6">(Índice de Massa Corporal)</h2>
             <label>Peso:</label>
             <input type="text" id="result" readonly required>
             <label>Altura:</label>
             <input type="text" id="result2" readonly required>
-            <div class="buttons">
-                <button class="clear btn btn-dark">C</button>
-                <button class="number btn btn-dark">0</button>
-                <button class="apagar btn btn-dark">⌫</button>
-                <button class="number btn btn-dark">1</button>
-                <button class="number btn btn-dark">2</button>
-                <button class="number btn btn-dark">3</button>
-                <button class="number btn btn-dark">4</button>
-                <button class="number btn btn-dark">5</button>
-                <button class="number btn btn-dark">6</button>
-                <button class="number btn btn-dark">7</button>
-                <button class="number btn btn-dark">8</button>
-                <button class="number btn btn-dark">9</button>
-                <button class="pontuacao btn btn-dark">,</button>
-                <button class="calculate btn btn-success">Calcular</button>
-                <button class="clear_tudo btn btn-success">Resetar</button>
+            <div class="row buttons">
+                <div class="col d-grid buttons">
+                    <button class="clear btn btn-dark">C</button>
+                    <button class="number btn btn-dark">1</button>
+                    <button class="number btn btn-dark">4</button>
+                    <button class="number btn btn-dark">7</button>
+                    <button class="pontuacao btn btn-dark">,</button>
+                </div>
+                <div class="col d-grid buttons">
+                    <button class="number btn btn-dark">0</button>
+                    <button class="number btn btn-dark">2</button>
+                    <button class="number btn btn-dark">5</button>
+                    <button class="number btn btn-dark">8</button>
+                    <button class="calculate1 btn btn-success">Calcular</button>
+                </div>
+                <div class="col d-grid buttons">
+                    <button class="apagar btn btn-dark">⌫</button>
+                    <button class="number btn btn-dark">3</button>
+                    <button class="number btn btn-dark">6</button>
+                    <button class="number btn btn-dark">9</button>
+                    <button class="clear_tudo btn btn-success">Resetar</button>
+                </div>
             </div>
-            <div class="buttons2">
-                <button class="clear2 btn btn-dark">C</button>
-                <button class="number2 btn btn-dark">0</button>
-                <button class="apagar2 btn btn-dark">⌫</button>
-                <button class="number2 btn btn-dark">1</button>
-                <button class="number2 btn btn-dark">2</button>
-                <button class="number2 btn btn-dark">3</button>
-                <button class="number2 btn btn-dark">4</button>
-                <button class="number2 btn btn-dark">5</button>
-                <button class="number2 btn btn-dark">6</button>
-                <button class="number2 btn btn-dark">7</button>
-                <button class="number2 btn btn-dark">8</button>
-                <button class="number2 btn btn-dark">9</button>
-                <button class="pontuacao2 btn btn-dark">,</button>
-                <button class="calculate btn btn-success">Calcular</button>
-                <button class="clear_tudo btn btn-success">Resetar</button>
+            <div class="row buttons2">
+                <div class="col d-grid buttons2">
+                    <button class="clear2 btn btn-dark">C</button>
+                    <button class="number2 btn btn-dark">1</button>
+                    <button class="number2 btn btn-dark">4</button>
+                    <button class="number2 btn btn-dark">7</button>
+                    <button class="pontuacao2 btn btn-dark">,</button>
+                </div>
+                <div class="col d-grid buttons2">
+                    <button class="number2 btn btn-dark">0</button>
+                    <button class="number2 btn btn-dark">2</button>
+                    <button class="number2 btn btn-dark">5</button>
+                    <button class="number2 btn btn-dark">8</button>
+                    <button class="calculate2 btn btn-success">Calcular</button>
+                </div>
+                <div class="col d-grid buttons2">
+                    <button class="apagar2 btn btn-dark">⌫</button>
+                    <button class="number2 btn btn-dark">3</button>
+                    <button class="number2 btn btn-dark">6</button>
+                    <button class="number2 btn btn-dark">9</button>
+                    <button class="clear_tudo btn btn-success">Resetar</button>
+                </div>
             </div>
+            <div class="alert alert-danger mensagem" role="alert">Preencha os dois campos antes de calcular</div>
             <div class="alert alert-primary mensagem1" role="alert">Você está muito abaixo do peso</div>
             <div class="alert alert-secondary mensagem2" role="alert">Você está abaixo do peso</div>
             <div class="alert alert-success mensagem3" role="alert">Você está com o peso normal</div>
