@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./lib/bootstrap.min.css">
+        <title>Projeto Bootstrap</title>
+    </head>
+    <body>
+        <style>
+            body{
+                background-color: #000;
+            }
+            .carousel-item{
+                margin-top: 5%;
+                height: 500px;
+            }
+            img{
+                width: 100%;
+            }
+            article img{
+                max-height: 400px;
+            }
+            .card-img-overlay{
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+            .col-3{
+                margin-top: 5%;
+                width: 33%;
+            }
+            article{
+                margin-bottom: 5%;
+            }
+            @media screen and (min-width: 641px) and (max-width: 1023px){
+                .col-3{
+                    min-width: 50%;
+                }
+            }
+            @media screen and (max-width: 640px){
+                .col-3{
+                    min-width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="carousel-ex" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="2000" class="carousel-item active">
+                        <img src="https://cdn.leonardo.ai/users/502182e0-764a-4716-8c39-bbe0a2535396/generations/21f1960e-6ca8-4fef-970a-eebe65a21bc7/Leonardo_Diffusion_Artificial_intelligence_0.jpg">
+                    </div>
+                    <div data-bs-interval="2000" class="carousel-item">
+                        <img src="https://cdn.leonardo.ai/users/502182e0-764a-4716-8c39-bbe0a2535396/generations/c7d0c829-2418-43cf-903f-df599ef86f58/Leonardo_Diffusion_Artificial_2.jpg">
+                    </div>
+                    <div data-bs-interval="2000" class="carousel-item">
+                        <img src="https://cdn.leonardo.ai/users/502182e0-764a-4716-8c39-bbe0a2535396/generations/21f1960e-6ca8-4fef-970a-eebe65a21bc7/Leonardo_Diffusion_Artificial_intelligence_2.jpg">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#carousel-ex" data-bs-slide="prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#carousel-ex" data-bs-slide="next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-ex" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-ex" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-ex" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <article class="card text-bg-dark">
+                        <img src="https://cdn.leonardo.ai/users/502182e0-764a-4716-8c39-bbe0a2535396/generations/f15a9fea-03b3-4884-9eda-20605fe4a96c/Leonardo_Diffusion_Rob_0.jpg">
+                        <div class="card-img-overlay">
+                            <h4>Imagem do Robô</h4>
+                            <p class="card-text">Criada com a inteligência artificial leonardo.ai</p>
+                            <a href="#" class="btn btn-success">Saiba mais</a>
+                        </div>
+                        <div class="card-footer">
+                            Postado em <time>07/06/2023</time>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-3">
+                    <article class="card text-bg-dark">
+                        <img src="https://cdn.leonardo.ai/users/502182e0-764a-4716-8c39-bbe0a2535396/generations/f15a9fea-03b3-4884-9eda-20605fe4a96c/Leonardo_Diffusion_Rob_1.jpg">
+                        <div class="card-img-overlay">
+                            <h4>Imagem do Robô</h4>
+                            <p class="card-text">Criada com a inteligência artificial leonardo.ai</p>
+                            <a href="#" class="btn btn-success">Saiba mais</a>
+                        </div>
+                        <div class="card-footer">
+                            Postado em <time>07/06/2023</time>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-3">
+                    <article class="card text-bg-dark">
+                        <img src="https://cdn.leonardo.ai/users/502182e0-764a-4716-8c39-bbe0a2535396/generations/caa0589e-da5b-4d4f-83dd-00cefd820fbc/Leonardo_Diffusion_Rob_Robtico_0.jpg">
+                        <div class="card-img-overlay">
+                            <h4>Imagem do Robô</h4>
+                            <p class="card-text">Criada com a inteligência artificial leonardo.ai</p>
+                            <a href="#" class="btn btn-success">Saiba mais</a>
+                        </div>
+                        <div class="card-footer">
+                            Postado em <time>07/06/2023</time>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-3">
+                    <article class="card text-bg-dark">
+                        <img src="https://cdn.leonardo.ai/users/502182e0-764a-4716-8c39-bbe0a2535396/generations/caa0589e-da5b-4d4f-83dd-00cefd820fbc/Leonardo_Diffusion_Rob_Robtico_1.jpg">
+                        <div class="card-img-overlay">
+                            <h4>Imagem do Robô</h4>
+                            <p class="card-text">Criada com a inteligência artificial leonardo.ai</p>
+                            <a href="#" class="btn btn-success">Saiba mais</a>
+                        </div>
+                        <div class="card-footer">
+                            Postado em <time>07/06/2023</time>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-3">
+                    <article class="card text-bg-dark">
+                        <img src="https://cdn.leonardo.ai/users/502182e0-764a-4716-8c39-bbe0a2535396/generations/1098589a-9ed1-40ee-8800-476b8c83d8da/Leonardo_Select_Rob_Robtico_0.jpg">
+                        <div class="card-img-overlay">
+                            <h4>Imagem do Robô</h4>
+                            <p class="card-text">Criada com a inteligência artificial leonardo.ai</p>
+                            <a href="#" class="btn btn-success">Saiba mais</a>
+                        </div>
+                        <div class="card-footer">
+                            Postado em <time>07/06/2023</time>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-3">
+                    <article class="card text-bg-dark">
+                        <img src="https://cdn.leonardo.ai/users/502182e0-764a-4716-8c39-bbe0a2535396/generations/1098589a-9ed1-40ee-8800-476b8c83d8da/Leonardo_Select_Rob_Robtico_1.jpg">
+                        <div class="card-img-overlay">
+                            <h4>Imagem do Robô</h4>
+                            <p class="card-text">Criada com a inteligência artificial leonardo.ai</p>
+                            <a href="#" class="btn btn-success">Saiba mais</a>
+                        </div>
+                        <div class="card-footer">
+                            Postado em <time>07/06/2023</time>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <script src="./lib/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
