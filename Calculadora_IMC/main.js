@@ -1,26 +1,21 @@
 $(document).ready(function() {
     var result = $('#result');
     var result2 = $('#result2');
-    
-    $('#result').click(function(){
-        buttons2 = $('.buttons2').css('display', 'none');
-        buttons = $('.buttons').css('display', 'flex');
-        $('.number').click(function() {
-            var val = $(this).text();
-            result.val(result.val() + val);
-        });
-        $('.clear').click(function() {
-            result.val('');
-        });
-        $('.apagar').click(function(){
-            result.val(result.val().slice(0, -1));
-        });
-        $('.pontuacao').click(function(){
-            result.val(result.val() + '.');
-        });
-        $('.calculate1').click(function(){
-            $('.mensagem').css('display', 'block')
-        });
+
+    buttons2 = $('.buttons2').css('display', 'none');
+    buttons = $('.buttons').css('display', 'flex');
+    $('.number').click(function() {
+        var val = $(this).text();
+        result.val(result.val() + val);
+    });
+    $('.clear').click(function() {
+        result.val('');
+    });
+    $('.apagar').click(function(){
+        result.val(result.val().slice(0, -1));
+    });
+    $('.calculate1').click(function(){
+        $('.mensagem').css('display', 'block')
     });
 
     $('#result2').click(function(){
