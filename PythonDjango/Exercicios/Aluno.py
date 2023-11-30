@@ -23,3 +23,19 @@ aluno1.apresentar()
 aluno1.media()
 aluno2.apresentar()
 aluno2.media()
+
+
+# Professor
+
+class Aluno:
+    
+    def __init__(self, nome:str, matricula: int, notas: []):
+        self.nome = nome
+        self.matricula = matricula
+        self.notas = notas
+
+    def media(self):
+        return sum(self.notas) / len(self.notas)
+    
+    def exibirInfos(self):
+        print(f'Nome: {self.nome}\nMatricula: {self.matricula}\nNotas: {self.notas} - Médias: {self.media()}')
