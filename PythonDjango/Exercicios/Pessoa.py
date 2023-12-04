@@ -32,7 +32,7 @@ class Pessoa:
             self.peso -= quant_kg
 
     def crescer(self, cm):
-        if self.altura > 21:
+        if self.idade < 21:
             self.altura += cm
         else:
             return print("Você não pode crescer mais por conta da sua idade")
